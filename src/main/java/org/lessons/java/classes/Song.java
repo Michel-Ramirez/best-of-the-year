@@ -1,15 +1,13 @@
 package org.lessons.java.classes;
 
-import java.util.Random;
-
 public class Song {
 
 	private int id;
 	private String title;
 	private String author;
 
-	public Song(String title, String author) {
-		setId();
+	public Song(int id, String title, String author) {
+		setId(id);
 		setTitle(title);
 		setAuthor(author);
 	}
@@ -18,11 +16,8 @@ public class Song {
 		return id;
 	}
 
-	public void setId() {
-		Random rnd = new Random();
-		int rdnId = rnd.nextInt(1, 11);
-
-		this.id = rdnId;
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public String getTitle() {

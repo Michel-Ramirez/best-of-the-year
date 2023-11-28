@@ -26,16 +26,16 @@ public class MainController {
 
 		List<Movie> movies = new ArrayList<>();
 
-		movies.add(new Movie("Inception", "Christopher Nolan"));
-		movies.add(new Movie("La La Land", "Damien Chazelle"));
-		movies.add(new Movie("The Shawshank Redemption", "Frank Darabont"));
-		movies.add(new Movie("The Dark Knight", "Christopher Nolan"));
-		movies.add(new Movie("Pulp Fiction", "Quentin Tarantino"));
-		movies.add(new Movie("Forrest Gump", "Robert Zemeckis"));
-		movies.add(new Movie("Interstellar", "Christopher Nolan"));
-		movies.add(new Movie("The Godfather", "Francis Ford Coppola"));
-		movies.add(new Movie("The Matrix", "Lana Wachowski, Lilly Wachowski"));
-		movies.add(new Movie("Fight Club", "David Fincher"));
+		movies.add(new Movie(1, "Inception", "Christopher Nolan"));
+		movies.add(new Movie(2, "La La Land", "Damien Chazelle"));
+		movies.add(new Movie(3, "The Shawshank Redemption", "Frank Darabont"));
+		movies.add(new Movie(4, "The Dark Knight", "Christopher Nolan"));
+		movies.add(new Movie(5, "Pulp Fiction", "Quentin Tarantino"));
+		movies.add(new Movie(6, "Forrest Gump", "Robert Zemeckis"));
+		movies.add(new Movie(7, "Interstellar", "Christopher Nolan"));
+		movies.add(new Movie(8, "The Godfather", "Francis Ford Coppola"));
+		movies.add(new Movie(9, "The Matrix", "Lana Wachowski, Lilly Wachowski"));
+		movies.add(new Movie(10, "Fight Club", "David Fincher"));
 
 		return movies;
 
@@ -45,16 +45,16 @@ public class MainController {
 
 		List<Song> songs = new ArrayList<>();
 
-		songs.add(new Song("Bohemian Rhapsody", "Queen"));
-		songs.add(new Song("Imagine", "John Lennon"));
-		songs.add(new Song("Hotel California", "Eagles"));
-		songs.add(new Song("Smells Like Teen Spirit", "Nirvana"));
-		songs.add(new Song("Billie Jean", "Michael Jackson"));
-		songs.add(new Song("Hey Jude", "The Beatles"));
-		songs.add(new Song("Stairway to Heaven", "Led Zeppelin"));
-		songs.add(new Song("Like a Rolling Stone", "Bob Dylan"));
-		songs.add(new Song("Yesterday", "The Beatles"));
-		songs.add(new Song("Wonderwall", "Oasis"));
+		songs.add(new Song(1, "Bohemian Rhapsody", "Queen"));
+		songs.add(new Song(2, "Imagine", "John Lennon"));
+		songs.add(new Song(3, "Hotel California", "Eagles"));
+		songs.add(new Song(4, "Smells Like Teen Spirit", "Nirvana"));
+		songs.add(new Song(5, "Billie Jean", "Michael Jackson"));
+		songs.add(new Song(6, "Hey Jude", "The Beatles"));
+		songs.add(new Song(7, "Stairway to Heaven", "Led Zeppelin"));
+		songs.add(new Song(8, "Like a Rolling Stone", "Bob Dylan"));
+		songs.add(new Song(9, "Yesterday", "The Beatles"));
+		songs.add(new Song(10, "Wonderwall", "Oasis"));
 
 		return songs;
 	}
