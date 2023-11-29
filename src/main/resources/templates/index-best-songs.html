@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="ISO-8859-1">
-<link rel="stylesheet" href="/webjars/bootstrap/5.3.2/css/bootstrap.min.css" />
-<title>Best Songs</title>
-<style>
-</style>
+    <meta charset="ISO-8859-1">
+    <link rel="stylesheet" href="/webjars/bootstrap/5.3.2/css/bootstrap.min.css" />
+    <title>Best Songs</title>
+    <style>
+        ul {
+            list-style-type: decimal;
+        }
+    </style>
 </head>
+
 <body>
-	<header th:insert="fragments :: header" class="mb-5"></header>
-	
-	<main class="container">
+    <header th:insert="fragments :: header" class="mb-5"></header>
+
+    <main class="container">
         <h1 class="mb-5">The best Songs</h1>
-        
+
         <ul>
-            <li th:each="song : ${songs}" th:text="${song.title}">
-                <a th:replace="fragments :: button-nav(/songs/{id} (id=${song.id}, 'detail'))"></a>
+            <li th:each="song : ${songs}">
+                <div th:text="${song.title}"></div>
+                <a th:replace="fragments :: button-nav(@{/songs/{id}(id=${song.id})} , 'detail')"></a>
             </li>
         </ul>
-        
+
     </main>
 </body>
+
 </html>
