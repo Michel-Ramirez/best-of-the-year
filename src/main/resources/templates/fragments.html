@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<a 
+		th:fragment="button-nav(link, title)"
+		th:href="@{link}"
+		th:text="${title}"
+		class="btn btn-secondary">
+	</a>
+	
+	<a 
+		th:fragment="button-info(link, title)"
+		th:href="@{link}"
+		th:text="${title}"
+		class="btn btn-info">
+	</a>
+	
+	<div th:fragment="header">
+        <div class="container pt-3">
+            <div class="row">
+                <div class="col-2">
+                    <h2 class="text-red fw-bolder fs-1">BEST OF THE...</h2>
+                    
+                </div>
+                <div class="col d-flex justify-content-end align-items-center">
+                    <a class="btn btn-info me-5" th:href="@{/movies}">MOVIES</a>
+                    <a class="btn btn-info" th:href="@{/songs}">SONGS</a>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+</body>
+</html>

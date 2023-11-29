@@ -19,7 +19,7 @@ public class MainController {
 		String name = "Michel Ramirez";
 
 		model.addAttribute("name", name);
-		return "index-name";
+		return "index-home";
 	}
 
 	private List<Movie> getBestMovies() {
@@ -97,6 +97,7 @@ public class MainController {
 		}
 
 		model.addAttribute("movietitle", movieTitle);
+		model.addAttribute("id", id);
 
 		return "index-detail-movie";
 
@@ -119,6 +120,7 @@ public class MainController {
 		}
 
 		model.addAttribute("songtitle", songTitle);
+		model.addAttribute("id", id);
 
 		return "index-detail-song";
 

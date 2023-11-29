@@ -2,17 +2,23 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<link rel="stylesheet" href="/webjars/bootstrap/5.3.2/css/bootstrap.min.css" />
+<title>Best Songs</title>
 <style>
-	body {
-		width: 50vw;
-	}
 </style>
 </head>
 <body>
-	<h1>Le migliori canzoni</h1>
-	<hr>
-	<hr>
-	<h5>[[${songs}]]</h5>
+	<header th:insert="fragments :: header" class="mb-5"></header>
+	
+	<main class="container">
+        <h1 class="mb-5">The best Songs</h1>
+        
+        <ul>
+            <li th:each="song : ${songs}" th:text="${song.title}">
+                <a th:replace="fragments :: button-nav(/songs/{id} (id=${song.id}, 'detail'))"></a>
+            </li>
+        </ul>
+        
+    </main>
 </body>
 </html>
